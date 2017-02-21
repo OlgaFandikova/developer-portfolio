@@ -1,0 +1,23 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Olga Fandikova front-end developer{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/style.css') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block js %}
+            <script type="text/javascript" src="{{ asset('bundles/app/js/jquery-scrolltofixed-min.js') }}"></script>
+            <script src="{{ asset('bundles/app/js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
+{% endspaceless %}

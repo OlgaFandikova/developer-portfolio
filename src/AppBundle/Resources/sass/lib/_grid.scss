@@ -1,0 +1,60 @@
+/* ===== Grid ===== */
+
+/* Mixins */
+
+@mixin container($gutter) {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 $gutter + px;
+  @include min-width($screen-sm) {
+    max-width: $screen-sm + px;
+  }
+  @include min-width($screen-md) {
+    max-width: $screen-md + px;
+  }
+  @include min-width($screen-lg) {
+    max-width: $screen-lg + px;
+  }
+}
+
+@mixin calc-grid-column($class, $screen-size) {
+  $number: 1;
+  @while $number <= $columns {
+    @include min-width($screen-size) {
+      .#{$class}-#{$number} {
+        flex: 0 0 percentage(($number / $columns));
+        max-width: percentage(($number / $columns));
+      }
+    }
+    $number: $number + 1;
+  }
+}
+
+/* Classes */
+.container {
+  @include container($gutter);
+}
+
+.row {
+  margin-left: -$gutter + px;
+  margin-right: -$gutter + px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 0 0 100%;
+  padding: 0 $gutter + px;
+}
+
+/* Columns lg */
+@include calc-grid-column('lg', $screen-lg);
+
+/* Columns md */
+@include calc-grid-column('md', $screen-md);
+
+/* Columns sm */
+@include calc-grid-column('sm', $screen-sm);
+
+/* Columns xs */
+@include calc-grid-column('xs', 0);
