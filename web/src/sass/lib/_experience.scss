@@ -1,0 +1,105 @@
+.timeline-details {
+  position: relative;
+}
+
+.company-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary;
+  margin: 0;
+  line-height: 1;
+}
+
+.work-position {
+  margin: 10px 0 0 0;
+  color: #adadad;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.work-description {
+  line-height: 26px;
+  padding: 25px 0;
+  font-size: 15px;
+  margin: 0 0 30px 0;
+}
+
+.timeline-date {
+  position: relative;
+  display: inline-block;
+  color: $white-base;
+  background-color: $primary;
+  border-radius: $default-border-radius;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 18px;
+  margin-top: 55px;
+}
+
+.timeline-date-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  &.arrow-left {
+    left: -9px;
+    @include arrow(9, 18, $primary, l);
+  }
+  &.arrow-right {
+    right: -9px;
+    @include arrow(9, 18, $primary, r);
+  }
+}
+
+.timeline {
+  position: absolute;
+  top: 0;
+  right: -58px;
+  &.timeline-left {
+    right: auto;
+    left: -58px;
+  }
+  .line {
+    position: relative;
+    width: 1px;
+    margin-left: 12.5px;
+    background-color: $dark;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      size: 5px;
+      border-radius: 50%;
+      background-color: $dark;
+      left: -2.5px;
+    }
+  }
+  .top-line {
+    height: 70px;
+    margin-top: -10px;
+    &:after {
+      bottom: 0;
+    }
+  }
+  .bottom-line {
+    height: 130px;
+    &:after {
+      top: 0;
+    }
+  }
+}
+
+.icon-close-arrow {
+  display: inline-block;
+  size: 26px;
+  @include svg(close-arrow, $dark);
+  margin: 10px 0;
+}
+
+.icon-check-arrow {
+  display: inline-block;
+  size: 26px;
+  @include svg(check-arrow, $dark);
+  margin: 10px 0;
+}
