@@ -1,0 +1,40 @@
+/* ===== Buttons ===== */
+
+.button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  line-height: 1.4;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $gray;
+  color: $white-base;
+  padding: 15px 20px;
+  border-radius: $default-border-radius;
+  transition: .2s;
+  overflow: hidden;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+/* Button Icon */
+.icon-button {
+  position: relative;
+  padding-left: 70px;
+}
+
+.icon-block {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: rgba(0,0,0,.15);
+  border-top-left-radius: $default-border-radius;
+  border-bottom-left-radius: $default-border-radius;
+  i {
+    margin: auto;
+  }
+}

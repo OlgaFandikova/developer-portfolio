@@ -1,0 +1,56 @@
+/* ===== Visibility ===== */
+
+/* Classes */
+.lg-show {
+  @include max-width($screen-lg) {
+    display: none !important;
+  }
+}
+
+.md-show {
+  @include max-width($screen-md) {
+    display: none !important;
+  }
+  @include min-width($screen-lg) {
+    display: none !important;
+  }
+}
+
+.sm-show {
+  @include max-width($screen-sm) {
+    display: none !important;
+  }
+  @include min-width($screen-md) {
+    display: none !important;
+  }
+}
+
+.xs-show {
+  @include min-width($screen-sm) {
+    display: none !important;
+  }
+}
+
+.lg-hide {
+  @include min-width($screen-lg) {
+    display: none !important;
+  }
+}
+
+.md-hide {
+  @include media-width($screen-md, $screen-lg) {
+    display: none !important;
+  }
+}
+
+.sm-hide {
+  @include media-width($screen-sm, $screen-md) {
+    display: none !important;
+  }
+}
+
+.xs-hide {
+  @include max-width($screen-sm) {
+    display: none !important;
+  }
+}

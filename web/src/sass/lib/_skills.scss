@@ -1,0 +1,92 @@
+.skill {
+  background-color: $white-base;
+  border-radius: $default-border-radius;
+  margin-bottom: 20px;
+}
+
+.skill-name, .skill-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-name {
+  position: relative;
+  height: 180px;
+  background-color: $gray;
+  font-size: 18px;
+  color: $white-base;
+  text-transform: uppercase;
+  border-top-left-radius: $default-border-radius;
+  border-bottom-left-radius: $default-border-radius;
+  &:after {
+    content: '';
+    @include arrow(9, 18, $gray, r);
+    position: absolute;
+    top: 50%;
+    right: -9px;
+    margin-top: -9px;
+  }
+}
+
+.progress-circle {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  .circle {
+    transition: 1s cubic-bezier(0.6, 0.08, 0.2, 1.33);
+  }
+  &.left {
+    .circle {
+      transition-delay: .7s;
+    }
+    &.animated {
+      .circle {
+        stroke-dashoffset: 46.629;
+      }
+    }
+  }
+  &.center {
+    .circle {
+      transition-delay: .5s;
+    }
+    &.animated {
+      .circle {
+        stroke-dashoffset: 46.629;
+      }
+    }
+  }
+  &.right {
+    .circle {
+      transition-delay: .8s;
+    }
+    &.animated {
+      .circle {
+        stroke-dashoffset: 62.172;
+      }
+    }
+  }
+}
+
+.percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 110px;
+  font-size: 25px;
+  text-align: center;
+  &:after {
+    content: '%';
+    margin-left: 1px;
+    font-size: 18px;
+  }
+}
+
+.circle-svg {
+  stroke: $primary;
+  fill: transparent;
+  width: 110px;
+  height: 110px;
+  transform: rotate(-90deg);
+}

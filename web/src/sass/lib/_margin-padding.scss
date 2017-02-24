@@ -1,0 +1,57 @@
+/* ===== Margin and Padding ===== */
+
+/* Mixins */
+
+$margin-padding: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
+
+@mixin calc-margin($class, $direction) {
+  @each $number in $margin-padding {
+    @if $direction == 'all' {
+      .#{$class}-#{$number} {
+        margin: $number + px !important;
+      }
+    } @else {
+      .#{$class}-#{$number} {
+        margin-#{$direction}: $number + px !important;
+      }
+    }
+  }
+}
+
+@mixin calc-padding($class, $direction) {
+  @each $number in $margin-padding {
+    @if $direction == 'all' {
+      .#{$class}-#{$number} {
+        padding: $number + px !important;
+      }
+    } @else {
+      .#{$class}-#{$number} {
+        padding-#{$direction}: $number + px !important;
+      }
+    }
+  }
+}
+
+/* Margin Classes */
+
+@include calc-margin('m', 'all');
+
+@include calc-margin('mt', 'top');
+
+@include calc-margin('mr', 'right');
+
+@include calc-margin('mb', 'bottom');
+
+@include calc-margin('ml', 'left');
+
+/* Padding Classes */
+
+@include calc-padding('p', 'all');
+
+@include calc-padding('pt', 'top');
+
+@include calc-padding('pr', 'right');
+
+@include calc-padding('pb', 'bottom');
+
+@include calc-padding('pl', 'left');

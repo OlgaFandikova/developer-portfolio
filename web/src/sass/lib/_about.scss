@@ -1,0 +1,14 @@
+.text-about {
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.icon-download {
+  size: 20px;
+  display: inline-block;
+  background: url("../img/icons/symbol/svg/sprite.symbol.svg#download") no-repeat;
+  background-size: 100% auto;
+  fill: $white-base;
+}
