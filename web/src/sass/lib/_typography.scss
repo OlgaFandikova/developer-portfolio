@@ -59,9 +59,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-family: $font-raleway;
-  font-size: 62px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
+  @include min-width(420) {
+    font-size: 35px;
+  }
+  @include min-width($screen-sm) {
+    font-size: 62px;
+  }
+}
+
+h4 {
+  padding: 0;
+  margin: 0 0 8px 0;
+  color: $dark-gray;
+  font-size: 19px;
+  font-weight: 500;
 }
 
 /* ===== Text Classes ===== */
@@ -85,4 +99,10 @@ h2 {
   font-size: 16px;
   font-weight: 400;
   padding: 0 20px;
+  @include max-width($screen-sm) {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
 }

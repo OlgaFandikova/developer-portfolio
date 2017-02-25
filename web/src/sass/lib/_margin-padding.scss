@@ -55,3 +55,44 @@ $margin-padding: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 
 @include calc-padding('pb', 'bottom');
 
 @include calc-padding('pl', 'left');
+
+/* Margin and Padding Responsive Classes */
+
+@include min-width($screen-lg) {
+  @include calc-margin('m-lg', 'all');
+  @include calc-margin('mt-lg', 'top');
+  @include calc-margin('mr-lg', 'right');
+  @include calc-margin('mb-lg', 'bottom');
+  @include calc-margin('ml-lg', 'left');
+  @include calc-padding('p-lg', 'all');
+  @include calc-padding('pt-lg', 'top');
+  @include calc-padding('pr-lg', 'right');
+  @include calc-padding('pb-lg', 'bottom');
+  @include calc-padding('pl-lg', 'left');
+}
+
+@include min-width($screen-sm) {
+  @include calc-margin('m-sm', 'all');
+  @include calc-margin('mt-sm', 'top');
+  @include calc-margin('mr-sm', 'right');
+  @include calc-margin('mb-sm', 'bottom');
+  @include calc-margin('ml-sm', 'left');
+  @include calc-padding('p-sm', 'all');
+  @include calc-padding('pt-sm', 'top');
+  @include calc-padding('pr-sm', 'right');
+  @include calc-padding('pb-sm', 'bottom');
+  @include calc-padding('pl-sm', 'left');
+}
+
+@include max-width($screen-sm) {
+  @include calc-margin('m-xs', 'all');
+  @include calc-margin('mt-xs', 'top');
+  @include calc-margin('mr-xs', 'right');
+  @include calc-margin('mb-xs', 'bottom');
+  @include calc-margin('ml-xs', 'left');
+  @include calc-padding('p-xs', 'all');
+  @include calc-padding('pt-xs', 'top');
+  @include calc-padding('pr-xs', 'right');
+  @include calc-padding('pb-xs', 'bottom');
+  @include calc-padding('pl-xs', 'left');
+}

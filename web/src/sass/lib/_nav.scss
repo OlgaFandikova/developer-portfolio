@@ -2,13 +2,14 @@
   height: 100px;
   background-color: $dark-gray;
   transition: all 0.3s;
-  @include max-width($screen-sm) {
-    height: auto;
-  }
+  overflow: hidden;
   &.scroll-to-fixed-fixed {
     height: 50px;
-    @include max-width($screen-sm) {
-      height: auto;
+  }
+  &.open {
+    height: 490px;
+    &.scroll-to-fixed-fixed {
+      height: 455px;
     }
   }
 }
@@ -52,7 +53,11 @@
   display: inline-block;
   cursor: pointer;
   size: 30px;
-  margin: 35px 15px 35px 0;
+  margin: 35px 15px 0 0;
+  transition: all 0.3s;
+  .scroll-to-fixed-fixed & {
+    transform: translateY(-25px);
+  }
 }
 
 .icon-menu {
@@ -75,12 +80,20 @@
 }
 
 .responsive-menu {
+  transition: .3s;
   @include min-width($screen-sm) {
-    display: block !important;
+    visibility: visible;
+    opacity: 1;
   }
   @include max-width($screen-sm) {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     max-height: 400px;
     overflow: auto;
+  }
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s .3s;
   }
 }

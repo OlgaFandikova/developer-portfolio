@@ -16,7 +16,7 @@ const Initialize = {
 const Togglers = {
     header: function () {
         $('.toogle-nav').on('click', function() {
-            $('.responsive-menu').slideToggle()
+            $('.responsive-menu, .navbar').toggleClass('open')
         })
     }
 }

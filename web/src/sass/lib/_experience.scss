@@ -7,8 +7,11 @@
   font-size: 18px;
   font-weight: 500;
   color: $primary;
-  margin: 0;
+  margin: 20px 0 0 0;
   line-height: 1;
+  @include min-width($screen-sm) {
+    margin-top: 0;
+  }
 }
 
 .work-position {
@@ -20,35 +23,62 @@
 
 .work-description {
   line-height: 26px;
-  padding: 25px 0;
+  padding: 25px 0 0 0;
   font-size: 15px;
-  margin: 0 0 30px 0;
+  margin: 0;
+  @include min-width($screen-sm) {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+  }
 }
 
 .timeline-date {
   position: relative;
-  display: inline-block;
   color: $white-base;
   background-color: $primary;
   border-radius: $default-border-radius;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
   padding: 18px;
-  margin-top: 55px;
+  margin-top: 20px;
+  text-align: center;
+  @include min-width($screen-sm) {
+    display: inline-block;
+    margin-top: 55px;
+  }
+  @include min-width($screen-md) {
+    font-size: 17px;
+  }
 }
 
 .timeline-date-arrow {
   position: absolute;
-  top: 50%;
-  margin-top: -9px;
+  left: 50%;
+  margin-left: -9px;
+  @include min-width($screen-sm) {
+    top: 50%;
+    margin-top: -9px;
+    left: auto;
+    margin-left: 0;
+  }
   &.arrow-left {
-    left: -9px;
-    @include arrow(9, 18, $primary, l);
+    top: -9px;
+    @include arrow(18, 9, $primary, t);
+    @include min-width($screen-sm) {
+      top: 50%;
+      left: -9px;
+      @include arrow(9, 18, $primary, l);
+    }
   }
   &.arrow-right {
-    right: -9px;
-    @include arrow(9, 18, $primary, r);
+    bottom: -9px;
+    @include arrow(18, 9, $primary, b);
+    @include min-width($screen-sm) {
+      bottom: auto;
+      right: -9px;
+      @include arrow(9, 18, $primary, r);
+    }
   }
 }
 
