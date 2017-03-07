@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    //$('#st-stack').stackslider()
-
     var $gallery                   = $('.gallery'),
         $galleryItem               = $('.gallery-item'),
         $galleryNext               = $('.gallery-next'),
@@ -53,7 +51,13 @@ $(document).ready(function() {
         }
     })
 
-    $galleryOpen.on('click', function() {
+    $galleryOpen.on('click', function(e) {
+        var text = $galleryOpen.text()
+
         $gallery.toggleClass('open')
+        $galleryOpen.text(
+            text == "Развернуть портфолио" ? "Свернуть портфолио" : "Развернуть портфолио"
+        )
+        e.preventDefault()
     })
 })

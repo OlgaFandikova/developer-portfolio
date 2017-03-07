@@ -71,6 +71,19 @@ $margin-padding: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 
   @include calc-padding('pl-lg', 'left');
 }
 
+@include min-width($screen-md) {
+  @include calc-margin('m-md', 'all');
+  @include calc-margin('mt-md', 'top');
+  @include calc-margin('mr-md', 'right');
+  @include calc-margin('mb-md', 'bottom');
+  @include calc-margin('ml-md', 'left');
+  @include calc-padding('p-md', 'all');
+  @include calc-padding('pt-md', 'top');
+  @include calc-padding('pr-md', 'right');
+  @include calc-padding('pb-md', 'bottom');
+  @include calc-padding('pl-md', 'left');
+}
+
 @include min-width($screen-sm) {
   @include calc-margin('m-sm', 'all');
   @include calc-margin('mt-sm', 'top');

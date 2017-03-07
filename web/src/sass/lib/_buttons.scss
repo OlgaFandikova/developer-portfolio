@@ -16,6 +16,12 @@
   &:hover {
     background-color: $primary;
   }
+  &.primary {
+    background-color: $primary;
+    &:hover {
+      background-color: $gray;
+    }
+  }
 }
 
 /* Button Icon */
