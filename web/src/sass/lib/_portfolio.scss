@@ -25,7 +25,8 @@
   transform-style : preserve-3d;
   backface-visibility: hidden;
   transition: .6s;
-  overflow: hidden;
+  //overflow: hidden;
+  z-index: 10;
   padding: 7.5px 15px;
   cursor: pointer;
   @include min-width(690) {
@@ -108,9 +109,11 @@
 }
 
 .gallery-img {
-  display: block;
+  position: absolute 7.5px 7.5px 7.5px 7.5px;
+  background: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,.15);
   border: 10px solid $white-base;
+  overflow: hidden;
 }
 
 .gallery-navigation {
@@ -241,4 +244,26 @@
     color: $gray;
     text-decoration: none;
   }
+}
+
+
+
+
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.modal-overlay {
+  position: fixed 0 0 0 0;
+  z-index: 1000;
+  overflow: auto;
+  display: none;
+}
+
+.modal {
+  background: #fff;
+  position: absolute;
+  z-index: 2;
 }

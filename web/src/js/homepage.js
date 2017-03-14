@@ -60,4 +60,55 @@ $(document).ready(function() {
         )
         e.preventDefault()
     })
+
+
+
+
+
+
+    var $modalOverlay = $('.modal-overlay'),
+        $modal = $('.modal'),
+        documentWidth = parseInt(document.documentElement.clientWidth),
+        windowsWidth = parseInt(window.innerWidth),
+        scrollbarWidth = windowsWidth - documentWidth,
+        startModalState = {}
+
+    $galleryItem.on('click', function() {
+        var $item = $(this).find('.gallery-img'),
+            offsetTop = $item.offset().top,
+            offsetLeft = $item.offset().left,
+            width = $item.width(),
+            height = $item.height(),
+            scrollTop = $(document).scrollTop(),
+            windowsWidth = parseInt(window.innerWidth),
+            windowsHeight = parseInt(window.innerHeight)
+
+        $('body').addClass('modal-open').css({'padding-right': scrollbarWidth + 'px'})
+        $modalOverlay.show()
+
+        startModalState = {
+            width: width + 20 + 'px',
+            height: height + 20 + 'px',
+            top: offsetTop - scrollTop + 'px',
+            left: offsetLeft + 'px'
+        }
+        $modal.css(startModalState)
+
+        setTimeout(function() {
+            $modal.animate({
+                width: windowsWidth + 'px',
+                height: windowsHeight + 'px',
+                top: 0,
+                left: 0
+            }, 350)
+        }, 100)
+    })
+
+    $modalOverlay.on('click', function() {
+        $modal.animate(startModalState, 350)
+        $('body').removeClass('modal-open').removeAttr('style')
+        setTimeout(function() {
+            $modalOverlay.hide()
+        }, 350)
+    })
 })
