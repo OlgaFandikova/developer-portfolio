@@ -42,7 +42,7 @@
 .icon-laptop {
   display: inline-block;
   size: 70px;
-  background: url("../img/icons/symbol/svg/sprite.symbol.svg#laptop") no-repeat;
+  background: url("../icons/symbol/svg/sprite.symbol.svg#laptop") no-repeat;
   background-size: 100% auto;
   fill: #fff;
   @include max-width($screen-sm) {
@@ -54,7 +54,7 @@
   display: inline-block;
   cursor: pointer;
   size: 40px;
-  background: url("../img/icons/symbol/svg/sprite.symbol.svg#down-arrow") no-repeat;
+  background: url("../icons/symbol/svg/sprite.symbol.svg#down-arrow") no-repeat;
   background-size: 100% auto;
   fill: #fff;
 }

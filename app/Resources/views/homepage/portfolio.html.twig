@@ -9,34 +9,34 @@
         <a href="#" class="gallery-open">Развернуть портфолио</a>
     </div>
     <div class="gallery">
-        <div data-title="Арктика" data-descrription="Lorem ipsum dolor" class="gallery-item active">
+        <div data-title="Арктика" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item active">
             <div class="gallery-img">
-                <img src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика 2" data-descrription="Lorem ipsum dolor" class="gallery-item gallery-item-right">
+        <div data-title="Арктика 2" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
-                <img src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика 3" data-descrription="Lorem ipsum dolor" class="gallery-item gallery-item-right">
+        <div data-title="Арктика 3" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
-                <img  src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img  src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика 4" data-descrription="Lorem ipsum dolor" class="gallery-item gallery-item-right">
+        <div data-title="Арктика 4" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
-                <img src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика 5" data-descrription="Lorem ipsum dolor" class="gallery-item gallery-item-right">
+        <div data-title="Арктика 5" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
-                <img src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика 6" data-descrription="Lorem ipsum dolor" class="gallery-item gallery-item-right">
+        <div data-title="Арктика 6" data-descrription="Lorem ipsum dolor" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
-                <img src="{{ asset('src/img/arctic.jpg') }}"/>
+                <img src="{{ asset('public/img/arctic.jpg') }}"/>
             </div>
         </div>
         <div class="gallery-description">
@@ -52,8 +52,7 @@
     </div>
 </section>
 
-<div class="modal-overlay">
-    <div class="modal">
-
-    </div>
+<div class="portfolio-modal modal-overlay">
+    <div class="modal-loader"></div>
+    <div class="modal"></div>
 </div>

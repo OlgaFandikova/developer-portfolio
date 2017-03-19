@@ -15,4 +15,12 @@ class DefaultController extends Controller
     {
         return $this->render('index.html.twig');
     }
+
+    /**
+     * @Route("/portfolio/arctic", name="arctic")
+     */
+    public function portfolioArcticAction()
+    {
+        return $this->render('homepage/portfolio/arctic.html.twig');
+    }
 }

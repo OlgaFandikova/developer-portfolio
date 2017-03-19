@@ -8,7 +8,7 @@
         <title>{% block title %}Olga Fandikova front-end developer{% endblock %}</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
-        <link rel="stylesheet" href="{{ asset('src/css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('public/css/style.css') }}" />
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     </head>
@@ -16,10 +16,10 @@
         <div class="preloader"></div>
         {% block body %}{% endblock %}
         {% block js %}
-            <script type="text/javascript" src="{{ asset('src/js/jquery-scrolltofixed-min.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('src/js/wow.min.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('src/js/jquery.stellar.min.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('src/js/main.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/jquery-scrolltofixed-min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/wow.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/jquery.stellar.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/main.js') }}"></script>
         {% endblock %}
     </body>
 </html>

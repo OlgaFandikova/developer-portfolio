@@ -31,6 +31,10 @@
   }
 }
 
+.hide {
+  display: none !important;
+}
+
 .lg-hide {
   @include min-width($screen-lg) {
     display: none !important;

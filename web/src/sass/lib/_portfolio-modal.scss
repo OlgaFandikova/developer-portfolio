@@ -1,0 +1,86 @@
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+  will-change: opacity, visibility;
+  padding: 40px 15px 15px;
+  overflow: auto;
+  @include min-width($screen-md) {
+    padding: 30px;
+  }
+  .active & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.portfolio-row {
+  margin: 0 -7.5px;
+  display: flex;
+  flex-wrap: wrap;
+  @include min-width($screen-md) {
+    flex-wrap: nowrap;
+  }
+}
+
+.portfolio-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 0 7.5px;
+  @include min-width($screen-md) {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: -10px;
+  }
+}
+
+.portfolio-item {
+  flex-grow: 1;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.portfolio-modal-img {
+  overflow: hidden;
+  cursor: pointer;
+  flex-grow: 1;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute 0;
+    z-index: 2;
+    background: $primary;
+    transition: .2s;
+    will-change: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover:after {
+    visibility: visible;
+    opacity: .8;
+  }
+  img {
+    display: block;
+    @include max-width($screen-md) {
+      width: 100%;
+    }
+  }
+  .horizontal-img {
+    @include min-width($screen-md) {
+      width: 100%;
+    }
+  }
+  .vertical-img {
+    @include min-width($screen-md) {
+      height: 100%;
+      max-width: none;
+    }
+  }
+}

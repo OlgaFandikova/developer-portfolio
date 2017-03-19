@@ -57,7 +57,7 @@
 }
 
 @mixin svg($icon, $color) {
-  background: url("../img/icons/symbol/svg/sprite.symbol.svg#" + $icon) no-repeat;
+  background: url("../icons/symbol/svg/sprite.symbol.svg#" + $icon) no-repeat;
   background-size: 100% auto;
   fill: $color;
 }

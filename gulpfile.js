@@ -22,32 +22,32 @@ gulp.task('css', function () {
         }),
         svgFragments
     ];
-    return gulp.src('sass/*.scss')
+    return gulp.src('web/src/sass/*.scss')
         .pipe(sass())
         .pipe(concatCss("style.css"))
         .pipe(postcss(processors))
         .pipe(rename('style.css'))
-        .pipe(gulp.dest('css/'));
+        .pipe(gulp.dest('web/public/css/'));
 });
 
 // следим за изменением файлов и автоматически вызываем задачи
 gulp.task('watch', function () {
     gulp.run('css');
     gulp.run('svg');
-    gulp.watch('sass/*.scss', function () {
+    gulp.watch('web/src/sass/*.scss', function () {
         gulp.run('css');
     });
-    gulp.watch('sass/lib/*.scss', function () {
+    gulp.watch('web/src/sass/lib/*.scss', function () {
         gulp.run('css');
     });
-    gulp.watch('icons/*.svg', function () {
+    gulp.watch('web/src/icons/*.svg', function () {
         gulp.run('svg');
     })
 });
 
 // формирование svg спрайта
 gulp.task('svg', function () {
-    return gulp.src('img/icons/*.svg')
+    return gulp.src('web/src/icons/*.svg')
         .pipe(svgmin({
             js2svg: {
                 pretty: true
@@ -67,7 +67,7 @@ gulp.task('svg', function () {
                 preview: false
             }
         ))
-        .pipe(gulp.dest('img/icons'));
+        .pipe(gulp.dest('web/src/icons'));
 });
 
 

@@ -1,0 +1,45 @@
+body {
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.modal-overlay {
+  position: fixed 0 0 0 0;
+  z-index: 1000;
+  display: none;
+}
+
+.modal {
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+  opacity: .3;
+  transition: .2s;
+  will-change: opacity;
+  &:hover {
+    opacity: 1;
+  }
+  .icon-close-arrow {
+    margin: 0;
+    size: 30px;
+  }
+}
+
+.modal-loader {
+  position: absolute 0;
+  background: $primary;
+  display: none;
+  z-index: 10;
+}

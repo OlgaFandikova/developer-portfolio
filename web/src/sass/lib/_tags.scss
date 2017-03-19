@@ -1,0 +1,26 @@
+.tag-list {
+  margin: -10px 0 0 -10px;
+  .tag {
+    margin-top: 10px;
+  }
+}
+
+.tag {
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border: 2px solid $gray;
+  border-radius: $default-border-radius;
+  cursor: default;
+  transition: .2s;
+  &:hover {
+    color: $white-base;
+  }
+  &.primary {
+    border-color: $primary;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}
