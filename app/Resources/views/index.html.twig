@@ -8,14 +8,14 @@
 
 {% block body %}
     {% include 'homepage/slider.html.twig' %}
-    {% include 'homepage/navbar.html.twig' %}
+    {% include 'layout/navbar.html.twig' %}
     {% include 'homepage/about.html.twig' %}
     {% include 'homepage/education.html.twig' %}
     {% include 'homepage/skills.html.twig' %}
     {% include 'homepage/experience.html.twig' %}
     {% include 'homepage/portfolio.html.twig' %}
     {% include 'homepage/contacts.html.twig' %}
-    <div style="height: 200px"></div>
+    {% include 'layout/footer.html.twig' %}
 {% endblock %}
 
 {% block js %}
@@ -32,5 +32,7 @@
     <script type="text/javascript" src="{{ asset('public/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/js/revolution-slider/js/extensions/revolution.extension.video.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('public/js/modernizr.custom.63321.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBym8SflqcbRhhJWhGi0EFIPQD1DWrHWOM"></script>
     <script type="text/javascript" src="{{ asset('public/js/homepage.js') }}"></script>
 {% endblock %}
