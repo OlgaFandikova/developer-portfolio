@@ -1,0 +1,36 @@
+.footer {
+  padding: 60px 0;
+  background: $gray;
+  color: #fff;
+}
+
+.footer-list {
+  > li {
+    display: block;
+    > a {
+      display: block;
+      padding: 10px 0;
+      color: #c2c3c3 !important;
+      text-decoration: none !important;
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.border-list {
+  > li {
+    > a {
+      border-bottom: 1px dashed;
+    }
+  }
+}
+
+.copyright {
+  padding: 30px 0;
+  background: $dark-gray;
+  color: #c2c3c3;
+  font-size: 13px;
+  font-weight: 300;
+}

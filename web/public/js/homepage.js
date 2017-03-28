@@ -154,4 +154,39 @@ $(document).ready(function() {
             height: windowsHeight + 'px'
         });
     });
+
+    //drag and drop contacts
+    var $socialIcon              = $('.social-icon'),
+        $droppableContainer      = $('.droppable-container');
+
+    $socialIcon.draggable({containment: '.drag-and-drop-container'});
+
+    $droppableContainer.droppable({
+        drop: handleDropEvent
+    });
+
+    function handleDropEvent(event, ui) {
+        window.open(ui.draggable.context.attributes['data-href'].value, '_blank');
+        $socialIcon.draggable('option', 'revert', true);
+        setTimeout(function() {
+            $socialIcon.draggable('option', 'revert', false);
+        }, 100);
+    }
+
+    //Google Map
+    var mapCenter = {lat: 56.495785, lng: 85.056898};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: mapCenter.lat, lng: mapCenter.lng},
+        zoom: 12,
+        scrollwheel: false,
+        disableDefaultUI: true
+    });
+
+    var marker = new google.maps.Marker({
+        position: {lat: mapCenter.lat, lng: mapCenter.lng},
+        map: map,
+        icon: $('#map').data('marker')
+    });
+
 });
