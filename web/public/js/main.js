@@ -1,30 +1,30 @@
-const Initialize = {
+var Initialize = {
     scrollToFixed: function() {
-        $('.navbar-scrolltofixed').scrollToFixed()
+        $('.navbar-scrolltofixed').scrollToFixed();
     },
     wow: function() {
         var wow = new WOW({
             mobile: false
         });
-        wow.init()
+        wow.init();
     },
     parallax: function() {
-        $(window).stellar()
+        $(window).stellar();
     }
-}
+};
 
-const Togglers = {
+var Togglers = {
     header: function () {
         $('.toogle-nav').on('click', function() {
-            $('.responsive-menu, .navbar').toggleClass('open')
+            $('.responsive-menu, .navbar').toggleClass('open');
         })
     }
-}
+};
 
 $(document).ready(function() {
-    Initialize.scrollToFixed()
-    Initialize.wow()
-    Initialize.parallax()
+    Initialize.scrollToFixed();
+    Initialize.wow();
+    Initialize.parallax();
 
-    Togglers.header()
+    Togglers.header();
 })
