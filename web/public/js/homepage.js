@@ -52,7 +52,7 @@ $(document).ready(function() {
                     $stackLeft.css('height', (galleryItemLeftLength + 2) * 5 + 'px');
 
                     setTimeout(function() {
-                        $stackRight.css('height', (this.galleryItemRightLength + 2) * 5 + 'px');
+                        $stackRight.css('height', (galleryItemRightLength + 2) * 5 + 'px');
                         $galleryTitle.text($('.gallery-item.active').data('title'));
                         $galleryDescriptionText.text($('.gallery-item.active').data('description'));
                     }, 450)
@@ -144,7 +144,7 @@ $(document).ready(function() {
             $(document).on('click', '.modal-close',function() {
                 $modal.removeClass('active');
                 setTimeout(function() {
-                    $modal.animate(this.startModalState, 300);
+                    $modal.animate(startModalState, 300);
                     $('body').removeClass('modal-open').removeAttr('style');
                 }, 200);
                 setTimeout(function() {
