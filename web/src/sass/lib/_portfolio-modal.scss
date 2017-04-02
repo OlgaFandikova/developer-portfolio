@@ -31,13 +31,32 @@
 .portfolio-column {
   display: flex;
   flex-direction: column;
-  flex: 1 1 100%;
-  max-width: 100%;
   padding: 0 7.5px;
   @include min-width($screen-md) {
-    flex: 1 1 50%;
+    margin-bottom: -15px;
+  }
+}
+
+.left-column {
+  @include min-width($screen-md) {
+    flex: 0 0 calc(100% - 500px);
+    max-width: calc(100% - 500px);
+  }
+}
+
+.right-column {
+  @include min-width($screen-md) {
+    flex: 1 1 500px;
+    max-width: 500px;
+  }
+}
+
+.fix-column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  @include min-width($screen-md) {
+    flex: 0 0 50%;
     max-width: 50%;
-    margin-bottom: -10px;
   }
 }
 
@@ -53,8 +72,9 @@
   cursor: pointer;
   flex-grow: 1;
   position: relative;
-  max-height: 409px;
+  max-height: 417px;
   outline: none !important;
+  box-shadow: 1px 2px 7px rgba(0,0,0,.3);
   &:before {
     content: '';
     position: absolute;
@@ -100,8 +120,9 @@
   }
   .vertical-img {
     @include min-width($screen-md) {
-      height: 100%;
+      min-height: 100%;
       max-width: none;
+      min-width: 100%;
     }
   }
 }
