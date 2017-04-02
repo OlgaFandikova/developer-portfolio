@@ -48,11 +48,13 @@
 }
 
 .portfolio-modal-img {
+  display: block;
   overflow: hidden;
   cursor: pointer;
   flex-grow: 1;
   position: relative;
   max-height: 409px;
+  outline: none !important;
   &:before {
     content: '';
     position: absolute;
