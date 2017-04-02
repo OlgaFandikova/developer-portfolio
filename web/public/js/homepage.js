@@ -209,6 +209,17 @@ $(document).ready(function() {
         }
     };
 
+    var DownButton = {
+
+      click: function() {
+          $('.icon-arrow-down-circle').on('click', function() {
+              $('html, body').stop().animate({
+                  scrollTop: window.innerHeight
+              }, 500);
+          });
+      }
+    };
+
     //Анимация портфолио
     Gallery.next();
     Gallery.prev();
@@ -224,4 +235,7 @@ $(document).ready(function() {
 
     //Google Map
     Map.init();
+
+    //Прокрутка вниз со слайдера
+    DownButton.click();
 });

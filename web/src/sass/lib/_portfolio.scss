@@ -115,6 +115,35 @@
   @include min-width(1150) {
     position: absolute 7.5px 7.5px 7.5px 7.5px;
   }
+  &:before {
+    content: '';
+    position: absolute 0;
+    z-index: 5;
+    background: $primary;
+    transition: .2s;
+    visibility: hidden;
+    opacity: 0;
+    will-change: opacity, visibility;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    @include svg(plus-round, #fff);
+    size: 50px;
+    transition: .2s;
+    will-change: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover:before, &:hover:after {
+    opacity: .8;
+    visibility: visible;
+  }
 }
 
 .gallery-navigation {

@@ -44,7 +44,7 @@
 .portfolio-item {
   flex-grow: 1;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .portfolio-modal-img {
@@ -52,6 +52,25 @@
   cursor: pointer;
   flex-grow: 1;
   position: relative;
+  max-height: 409px;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    @include svg(plus-round, #fff);
+    size: 50px;
+    transition: .2s;
+    will-change: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+    &:hover {
+      opacity: 1;
+    }
+  }
   &:after {
     content: '';
     position: absolute 0;
@@ -62,7 +81,7 @@
     opacity: 0;
     visibility: hidden;
   }
-  &:hover:after {
+  &:hover:after, &:hover:before {
     visibility: visible;
     opacity: .8;
   }

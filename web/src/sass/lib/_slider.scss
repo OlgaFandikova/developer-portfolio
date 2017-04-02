@@ -19,7 +19,11 @@
   display: inline-block;
   cursor: pointer;
   size: 40px;
-  background: url("../icons/symbol/svg/sprite.symbol.svg#down-arrow") no-repeat;
-  background-size: 100% auto;
-  fill: #fff;
+  @include svg(down-arrow, #fff);
+  opacity: .6;
+  will-change: opacity;
+  transition: .2s;
+  &:hover {
+    opacity: 1;
+  }
 }
