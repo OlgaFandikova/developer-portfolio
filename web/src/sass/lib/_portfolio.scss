@@ -286,9 +286,29 @@
   color: $primary;
   margin-bottom: 15px;
   text-decoration: none;
-  border-bottom: 1px solid;
-  &:hover, &:active, &:focus {
+  line-height: 20px;
+  > i {
+    @include svg(square-menu, $primary);
+    size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+  &.open {
+    > i {
+      @include svg(list-menu, $primary);
+    }
+  }
+  &:hover {
     color: $gray;
     text-decoration: none;
+    > i {
+      @include svg(square-menu, $gray);
+    }
+    &.open {
+      > i {
+        @include svg(list-menu, $gray);
+      }
+    }
   }
 }

@@ -65,9 +65,11 @@ $(document).ready(function() {
                 var text = $galleryOpen.text();
 
                 $gallery.toggleClass('open');
-                $galleryOpen.text(
+                $galleryOpen.find('span').text(
                     text == "Развернуть портфолио" ? "Свернуть портфолио" : "Развернуть портфолио"
                 );
+                $galleryOpen.toggleClass('open');
+
                 e.preventDefault();
             });
         }
