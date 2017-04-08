@@ -55,4 +55,20 @@ class DefaultController extends Controller
     {
         return $this->render('homepage/portfolio/chemistry.html.twig');
     }
+
+    /**
+     * @Route("/portfolio/b2bmircar", name="b2bmircar")
+     */
+    public function portfolioB2bmircarAction()
+    {
+        return $this->render('homepage/portfolio/b2bmircar.html.twig');
+    }
+
+    /**
+     * @Route("/portfolio/evakuator", name="evakuator")
+     */
+    public function portfolioEvakuatorAction()
+    {
+        return $this->render('homepage/portfolio/evakuator.html.twig');
+    }
 }

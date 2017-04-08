@@ -12,11 +12,11 @@
   &.open {
     @include min-width(1160) {
       width: 1040px;
-      height: 924px;
+      height: 1232px;
     }
     @include min-width(1580) {
       width: 1560px;
-      height: 616px;
+      height: 924px;
     }
   }
 }
@@ -78,6 +78,20 @@
         left: 520px;
       }
     }
+    &:nth-of-type(7) {
+      top: 616px;
+      left: 0;
+      @include max-width(1580) {
+        top: 924px;
+      }
+    }
+    &:nth-of-type(8) {
+      top: 616px;
+      left: 520px;
+      @include max-width(1580) {
+        top: 924px;
+      }
+    }
   }
 }
 
@@ -112,6 +126,7 @@
   box-shadow: 0 0 5px rgba(0,0,0,.15);
   border: 10px solid $white-base;
   overflow: hidden;
+  position: relative;
   @include min-width(1150) {
     position: absolute 7.5px 7.5px 7.5px 7.5px;
   }
