@@ -22,6 +22,7 @@ body {
   overflow-x: hidden;
   font-family: $font-roboto;
   font-size: 16px;
+  line-height: 1.4;
   color: $dark;
 }
 
@@ -54,17 +55,31 @@ button {
 /* Background Classes */
 
 .bg-primary {
-  background-color: $primary;
+  background-color: $primary !important;
 }
 
 .bg-dark-gray {
-  background-color: $dark-gray;
+  background-color: $dark-gray !important;
 }
 
 .bg-gray {
-  background-color: $gray;
+  background-color: $gray !important;
 }
 
 .bg-white-f1 {
   background-color: $white-f1;
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  color: $gray;
+  &:hover {
+    text-decoration: underline;
+    color: $dark-gray;
+  }
+  &:active, &:focus, &:visited {
+    color: $dark-gray;
+  }
 }

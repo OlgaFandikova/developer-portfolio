@@ -25,6 +25,10 @@
   color: $dark-gray !important;
 }
 
+.text-gray {
+  color: $gray !important;
+}
+
 /* ===== Font Weight ===== */
 $i: 100;
 @while $i <= 900 {

@@ -126,3 +126,11 @@
     }
   }
 }
+
+.globe-icon {
+  @include svg(globe, $primary);
+  display: inline-block;
+  vertical-align: middle;
+  size: 18px;
+  margin-right: 7px;
+}
