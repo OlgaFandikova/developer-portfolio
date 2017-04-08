@@ -27,7 +27,7 @@ $(document).ready(function() {
         }
     };
 
-    var $navbarItem = $('.nav-menu a');
+    var $navbarItem = $('.nav-menu a, .footer-nav a');
 
     var Navbar = {
 
@@ -61,13 +61,11 @@ $(document).ready(function() {
                 });
                 $(this).addClass('active');
 
-                var target = this.hash,
-                    $target = $(target);
+                var $target = $(this.hash);
 
                 $('html, body').stop().animate({
                     scrollTop: $target.offset().top + 2
                 }, 500, 'swing', function () {
-                    window.location.hash = target;
                     $(document).on('scroll', this.onScroll);
                 });
             });
