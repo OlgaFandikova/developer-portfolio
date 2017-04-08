@@ -83,3 +83,39 @@ button {
     color: $dark-gray;
   }
 }
+
+/* Scroll Top Button */
+
+.scroll-top-button {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  size: 50px;
+  line-height: 50px;
+  border-radius: $default-border-radius;
+  text-align: center;
+  bottom: 15px;
+  right: 15px;
+  background: $gray;
+  opacity: .5;
+  transition: .2s;
+  will-change: background-color;
+  cursor: pointer;
+  padding: 0;
+  @include min-width($screen-sm) {
+    size: 60px;
+    line-height: 60px;
+    bottom: 30px;
+    right: 30px;
+  }
+  &:hover {
+    background: $primary;
+  }
+}
+
+.icon-top-arrow {
+  @include svg(top-arrow, #fff);
+  size: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}

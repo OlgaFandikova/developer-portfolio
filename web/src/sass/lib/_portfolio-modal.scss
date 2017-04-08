@@ -17,6 +17,12 @@
     opacity: 1;
     visibility: visible;
   }
+  .link {
+    @include max-width($screen-sm) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .portfolio-row {

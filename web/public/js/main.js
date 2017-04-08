@@ -72,6 +72,31 @@ $(document).ready(function() {
         }
     };
 
+    var $scrollToTopBtn = $('.scroll-top-button');
+
+    var ScrollToTop = {
+
+        click: function() {
+            $scrollToTopBtn.on('click', function() {
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        },
+
+        documentScroll: function() {
+            $(document).on('scroll', function() {
+                var scrollTop = $(document).scrollTop();
+
+                if (scrollTop > 250) {
+                    $scrollToTopBtn.fadeIn(500);
+                } else {
+                    $scrollToTopBtn.fadeOut(500);
+                }
+            });
+        }
+    };
+
     Initialize.scrollToFixed();
     Initialize.wow();
     Initialize.parallax();
@@ -80,4 +105,7 @@ $(document).ready(function() {
 
     Navbar.init();
     Navbar.click();
+
+    ScrollToTop.click();
+    ScrollToTop.documentScroll();
 });
