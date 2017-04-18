@@ -29,7 +29,9 @@
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="preloader"></div>
+        <div class="preloader">
+            {% include 'layout/loader.html.twig' %}
+        </div>
         {% block body %}{% endblock %}
         {% block js %}
             <script type="text/javascript" src="{{ asset('public/js/jquery-scrolltofixed-min.js') }}"></script>
