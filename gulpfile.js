@@ -22,7 +22,7 @@ gulp.task('css', function () {
         }),
         svgFragments
     ];
-    return gulp.src('web/src/sass/*.scss')
+    return gulp.src('web/src/scss/*.scss')
         .pipe(sass())
         .pipe(concatCss("style.css"))
         .pipe(postcss(processors))
@@ -34,10 +34,10 @@ gulp.task('css', function () {
 gulp.task('watch', function () {
     gulp.run('css');
     gulp.run('svg');
-    gulp.watch('web/src/sass/*.scss', function () {
+    gulp.watch('web/src/scss/*.scss', function () {
         gulp.run('css');
     });
-    gulp.watch('web/src/sass/lib/*.scss', function () {
+    gulp.watch('web/src/scss/lib/*.scss', function () {
         gulp.run('css');
     });
     gulp.watch('web/src/icons/*.svg', function () {
