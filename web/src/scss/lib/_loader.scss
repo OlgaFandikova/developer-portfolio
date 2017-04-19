@@ -2,39 +2,11 @@
   position: fixed 0;
   z-index: 2000;
   background-color: $white-base;
-  //display: block !important;
-}
-
-/* Variables */
-
-$pink: $light-gray;
-$blue: $primary;
-$yellow: $gray;
-
-/* Mixins */
-
-@mixin center {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-@mixin hole {
-  border-radius: 100%;
-  background: white;
-  position: absolute;
 }
 
 .loader {
-  height: 100%;
-  position: relative;
-  margin: auto;
-  width: 400px;
-  //text-align: center;
-  //font-size: 23px;
+  position: absolute 0;
+  z-index: 100;
 }
 
 .loader-overlay{
@@ -43,12 +15,12 @@ $yellow: $gray;
   background: transparent;
   box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.67), 0 0 19px 0 rgba(0, 0, 0, 0.16) inset;
   border-radius: 100%;
-  z-index: -1;
+  z-index: 2;
   @include center;
 }
 
 .loader-cogs {
-  z-index: -2;
+  z-index: 1;
   width: 100px;
   height: 100px;
   top: -120px !important;
