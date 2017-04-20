@@ -21,6 +21,7 @@
 .footer-list {
   > li {
     display: block;
+    margin-bottom: 1px;
     > a {
       display: block;
       padding: 10px 0;
@@ -31,12 +32,17 @@
       &:hover {
         color: #fff !important;
       }
+      > i {
+        vertical-align: text-top;
+        margin-right: 5px;
+      }
     }
   }
 }
 
 .border-list {
   > li {
+    margin-bottom: 0;
     > a {
       border-bottom: 1px dashed;
     }
@@ -45,8 +51,10 @@
 
 .footer-logo {
   width: 100%;
-  max-width: 200px;
-  margin-bottom: 10px;
+  max-width: 300px;
+  @include max-width($screen-md) {
+    margin-bottom: 20px;
+  }
 }
 
 .copyright {
@@ -55,4 +63,10 @@
   color: #c2c3c3;
   font-size: 13px;
   font-weight: 300;
+}
+
+.mail-icon {
+  display: inline-block;
+  size: 18px;
+  @include svg(mail, $primary);
 }
