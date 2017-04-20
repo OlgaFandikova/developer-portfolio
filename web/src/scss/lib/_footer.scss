@@ -26,6 +26,8 @@
       padding: 10px 0;
       color: #c2c3c3 !important;
       text-decoration: none !important;
+      transition: .2s;
+      will-change: color;
       &:hover {
         color: #fff !important;
       }
@@ -39,6 +41,12 @@
       border-bottom: 1px dashed;
     }
   }
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
 }
 
 .copyright {
