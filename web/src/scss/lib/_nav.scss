@@ -11,9 +11,13 @@
     }
   }
   &.open {
-    height: 490px;
+    @include max-width($screen-sm) {
+      height: 426px;
+    }
     &.scroll-to-fixed-fixed {
-      height: 455px;
+      @include max-width($screen-sm) {
+        height: 405px;
+      }
     }
   }
 }

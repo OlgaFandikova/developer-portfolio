@@ -2,7 +2,7 @@
   position: relative;
   background: url("../img/skills-bg.jpg") no-repeat;
   background-size: 120% auto;
-  @include max-width($screen-sm) {
+  @include max-width($screen-md) {
     background-size: auto 120%;
   }
   &:before {
