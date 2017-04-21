@@ -35,6 +35,11 @@
       > i {
         vertical-align: text-top;
         margin-right: 5px;
+        &.vk-icon {
+          display: inline-block;
+          size: 18px;
+          @include svg(vk-logo, $primary);
+        }
       }
     }
   }
