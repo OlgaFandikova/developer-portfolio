@@ -1,5 +1,12 @@
 {% extends 'layout/base.html.twig' %}
 
+{% block meta %}
+    <meta name="description" content="Персональный сайт и портфолио фронт-энд разработчика Ольги Фандиковой">
+    <meta name="Keywords" content="Ольга Фандикова, фронт-энд, фронтенд, фронтенд разработчик, frontend,
+    frontend разработчик, frontend developer, веб разработчик, портфолио разработчик, портфолио веб разработчика,
+    портфолио фронтенд разработчика, front end разработчик, front разработчик, front end">
+{% endblock %}
+
 {% block stylesheets %}
     <link  href="{{ asset('public/js/revolution-slider/css/settings.css') }}" rel="stylesheet" type="text/css"/>
     <link  href="{{ asset('public/js/revolution-slider/css/layers.css') }}" rel="stylesheet" type="text/css"/>
