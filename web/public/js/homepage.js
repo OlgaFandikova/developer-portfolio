@@ -138,7 +138,7 @@ $(document).ready(function() {
                     } else {
                         $modalLoader.fadeIn(200);
                     }
-                }, 350);
+                }, 450);
             });
         },
 

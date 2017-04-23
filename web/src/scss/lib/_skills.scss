@@ -3,7 +3,7 @@
   background: url("../img/skills-bg.jpg") no-repeat;
   background-size: 120% auto;
   @include max-width($screen-md) {
-    background-size: auto 120%;
+    background-size: auto 130%;
   }
   &:before {
     content: '';
@@ -59,7 +59,7 @@
   &.left {
     .circle {
       transition-delay: .7s;
-      @include max-width($screen-sm) {
+      @include max-width($screen-md) {
         stroke-dashoffset: 46.629;
       }
     }
@@ -72,7 +72,7 @@
   &.center {
     .circle {
       transition-delay: .5s;
-      @include max-width($screen-sm) {
+      @include max-width($screen-md) {
         stroke-dashoffset: 46.629;
       }
     }
@@ -85,7 +85,7 @@
   &.right {
     .circle {
       transition-delay: .8s;
-      @include max-width($screen-sm) {
+      @include max-width($screen-md) {
         stroke-dashoffset: 62.172;
       }
     }
