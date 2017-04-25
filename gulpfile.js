@@ -54,11 +54,6 @@ gulp.task('svg', function () {
             }
         }))
         .pipe(cheerio({
-            // используйте, если Вам нужно очищать svg от каких-либо атрибутов
-            // run: function ($) {
-            //     $('[fill]').removeAttr('fill');
-            //     $('[style]').removeAttr('style');
-            // },
             parserOptions: {xmlMode: true}
         }))
         .pipe(replace('&gt;', '>'))
