@@ -3,7 +3,8 @@
   background: url("../img/skills-bg.jpg") no-repeat;
   background-size: 120% auto;
   @include max-width($screen-md) {
-    background-size: auto 130%;
+    background-size: cover;
+    background-position: center!important;
   }
   &:before {
     content: '';
