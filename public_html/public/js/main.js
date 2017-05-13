@@ -27,12 +27,33 @@ $(document).ready(function() {
         }
     };
 
-    var $navbarItem = $('.nav-menu a, .footer-nav a');
+    var $navItem        = $('.nav-menu a, .footer-nav a');
+    var $navbarItem     = $('.nav-menu a');
 
     var Navbar = {
 
         init: function() {
             $(document).on('scroll', this.onScroll);
+        },
+
+        click: function() {
+            var context = this;
+
+            $navItem.on('click', function (e) {
+                e.preventDefault();
+                $(document).off('scroll');
+
+                var $target = $(this.hash);
+
+                $navItem.removeClass('active');
+                $('[href="' + $(this).attr('href') + '"]').addClass('active');
+
+                $('html, body').stop().animate({
+                    scrollTop: $target.offset().top + 2
+                }, 500, 'swing', function () {
+                    $(document).on('scroll', context.onScroll);
+                });
+            });
         },
 
         onScroll: function() {
@@ -42,32 +63,12 @@ $(document).ready(function() {
                 var currLink = $(this);
                 var refElement = $(currLink.attr('href'));
 
-                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                    $navbarItem.removeClass('active');
+                if (refElement.position().top <= scrollPos && refElement.position().top + refElement.innerHeight() > scrollPos) {
+                    $navItem.removeClass('active');
                     currLink.addClass('active');
                 } else {
                     currLink.removeClass('active');
                 }
-            });
-        },
-
-        click: function() {
-            $navbarItem.on('click', function (e) {
-                e.preventDefault();
-                $(document).off('scroll');
-
-                $navbarItem.each(function () {
-                    $(this).removeClass('active');
-                });
-                $(this).addClass('active');
-
-                var $target = $(this.hash);
-
-                $('html, body').stop().animate({
-                    scrollTop: $target.offset().top + 2
-                }, 500, 'swing', function () {
-                    $(document).on('scroll', this.onScroll);
-                });
             });
         }
     };
