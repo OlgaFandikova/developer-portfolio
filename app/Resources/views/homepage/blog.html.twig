@@ -1,0 +1,5 @@
+{% for blog in blogList %}
+    <div>
+        <a href="{{ path('blog', {'id': blog.id}) }}">{{ blog.title }}</a>
+    </div>
+{% endfor %}
