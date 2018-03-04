@@ -13,7 +13,26 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('index.html.twig');
+        $em = $this->getDoctrine();
+        $blogRepository = $em->getRepository('AppBundle:Blog');
+        $blogList = $blogRepository->findAll();
+
+        return $this->render('index.html.twig', ['blogList' => $blogList]);
+    }
+
+    /**
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/blog/{id}", name="blog")
+     */
+    public function blogAction($id)
+    {
+        $em = $this->getDoctrine();
+        $blogRepository = $em->getRepository('AppBundle:Blog');
+        $blog = $blogRepository->find($id);
+        $comments = $em->getRepository('AppBundle:Comment')->getCommentsForBlog($blog->getId());
+
+        return $this->render('blog/article.html.twig', ['blog' => $blog, 'comments' => $comments]);
     }
 
     /**
