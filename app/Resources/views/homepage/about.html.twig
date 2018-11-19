@@ -2,29 +2,23 @@
     <div class="container">
         <div class="row">
             <div class="column sm-6">
-                <img src="{{ asset('public/img/my-photo.jpg') }}" class="wow bounceInUp" alt="Ольга Смовж фронт-энд разработчик">
+                <img src="{{ asset('public/img/my-photo.jpg') }}" class="wow bounceInUp" alt="{% trans %}name{% endtrans %} {% trans %}job{% endtrans %}">
             </div>
             <div class="column md-6">
-                <h2 class="heading wow tada">Обо мне</h2>
+                <h2 class="heading wow tada">{% trans %}about{% endtrans %}</h2>
                 <div>
-                    <h3 class="subheading wow fadeIn"><strong class="uppercase">Ольга Смовж</strong> - фронт-энд разработчик</h3>
+                    <h3 class="subheading wow fadeIn">
+                        <strong class="uppercase">{% trans %}name{% endtrans %}</strong> - {% trans %}job{% endtrans %}
+                    </h3>
                 </div>
-                <p class="text-about">
-                    Занимаюсь веб-разработкой с 2015 года. Мне всегда нравилось создавать красивые вещи, поэтому я
-                    погрузилась во фронт-энд с головой. Люблю верстать, делать интересные анимации, эффекты и.т.п.
-                    Прошла тернистый путь от jQuery до Angular и React. Wordpress также побывал в моей жизни, куда же
-                    без него. Пишу понятный, аккуратный и красивый код. Обладаю чувством вкуса. Могу создавать лэндинги
-                    без нарисованного дизайна.
-                </p>
-                <p class="text-about">
-                    Готова помочь в решении Вашей задачи. Пишите!
-                </p>
+                <p class="text-about">{% trans %}about.p1{% endtrans %}</p>
+                <p class="text-about">{% trans %}about.p2{% endtrans %}</p>
                 <div class="mt-60">
-                    <img class="dark-logo wow fadeIn" src="{{ asset('public/img/dark-logo.svg') }}" alt="Ольга Смовж фронт-энд разработчик">
+                    <img class="dark-logo wow fadeIn" src="{{ asset('public/img/dark-logo.svg') }}" alt="{% trans %}name{% endtrans %} {% trans %}job{% endtrans %}">
                 </div>
                 <a class="button icon-button mt-30 wow bounceIn" href="{{ asset('files/Olga-Fandikova-front-end-developer.pdf') }}" target="_blank">
                     <span class="icon-block"><i class="icon-download"></i></span>
-                    Скачать резюме
+                    {% trans %}download_resume{% endtrans %}
                 </a>
             </div>
         </div>

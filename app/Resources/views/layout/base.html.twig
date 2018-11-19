@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {% block meta %}{% endblock %}
-        <title>{% block title %}Ольга Смовж фронт-энд разработчик{% endblock %}</title>
+        <title>{% block title %}{% trans %}name{% endtrans %} {% trans %}job{% endtrans %}{% endblock %}</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
         {% block stylesheets %}{% endblock %}
         <link rel="stylesheet" href="{{ asset('public/css/style.css') }}" />
