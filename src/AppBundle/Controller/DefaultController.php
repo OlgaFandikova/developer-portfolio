@@ -5,16 +5,24 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="home")
+     * @Route("/{_locale}", name="home", defaults = {"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-        return $this->render('index.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('index.html.twig', array(
+            'locale' => $locale
+        ));
     }
+
 
     /**
      * @Route("/portfolio/arctic", name="arctic")
