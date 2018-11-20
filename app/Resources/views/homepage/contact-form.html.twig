@@ -1,0 +1,19 @@
+<div class="form-success-message" style="display: none;">success</div>
+{#<form id="form">#}
+    {#<input type="text" name="name" required="required">#}
+    {#<button type="submit" class="btn-send">Отправить</button>#}
+{#</form>#}
+
+name = {{ name }}
+{{ dump() }}
+
+{{ form_start(form, {'attr': {'id': 'form', 'action': path('home')}}) }}
+
+{#{{ form_widget(form) }}#}
+
+{{ form_row(form.name, {'attr': {'placeholder': 'Имя'}}) }}
+{{ form_row(form.email, {'attr': {'placeholder': 'Email'}}) }}
+{{ form_row(form.message, {'attr': {'placeholder': 'Сообщение'}}) }}
+{{ form_row(form.save) }}
+
+{{ form_end(form) }}
