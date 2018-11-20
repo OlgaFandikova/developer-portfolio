@@ -1,17 +1,39 @@
+#Basic
 name: Olga Smovzh
 job: front-end developer
 area: web development
 personal_portfolio: Personal portfolio
 and: and
 resume: resume
+
+#Navigation
 about: About Me
 education: Education
 skills: Skills
 experience: Experience
 portfolio: Portfolio
 contact: Contact
-about.p1: Занимаюсь веб-разработкой с 2015 года. Мне всегда нравилось создавать красивые вещи, поэтому я погрузилась во фронт-энд с головой. Люблю верстать, делать интересные анимации, эффекты и.т.п. Прошла тернистый путь от jQuery до Angular и React. Wordpress также побывал в моей жизни, куда же без него. Пишу понятный, аккуратный и красивый код. Обладаю чувством вкуса. Могу создавать лэндинги без нарисованного дизайна.
-about.p2: Готова помочь в решении Вашей задачи. Пишите!
+
+#About Section
+about_p1: Занимаюсь веб-разработкой с 2015 года. Мне всегда нравилось создавать красивые вещи, поэтому я погрузилась во фронт-энд с головой. Люблю верстать, делать интересные анимации, эффекты и.т.п. Прошла тернистый путь от jQuery до Angular и React. Wordpress также побывал в моей жизни, куда же без него. Пишу понятный, аккуратный и красивый код. Обладаю чувством вкуса. Могу создавать лэндинги без нарисованного дизайна.
+about_p2: Готова помочь в решении Вашей задачи. Пишите!
 download_resume: download resume
-education.subtitle: Корень учения горек, да плод его сладок
+
+#Education Section
+education_subtitle: Корень учения горек, да плод его сладок
 tpu: Tomsk Polytechnic University
+tpu_institute: Institute of Cybernetics
+engineer: Engineer
+specialty: Automation of technological processes and production (in the oil and gas industry)
+school: School
+school_name: Первомайская общеобразовательная школа
+school_certificate: Аттестат с отличием
+school_medal: Золотая медаль
+music_school: School of Music
+music_school_name: Первомайский дом культуры
+piano: Piano
+piano_certificate: Диплом с отличием
+choreography_school: Choreography
+choreography_school_name: Первомайский дом культуры
+choreography: Choreography
+choreography_certificate: Диплом с отличием

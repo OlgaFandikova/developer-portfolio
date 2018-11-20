@@ -23,7 +23,6 @@ class DefaultController extends Controller
         ));
     }
 
-
     /**
      * @Route("/portfolio/arctic", name="arctic")
      */
