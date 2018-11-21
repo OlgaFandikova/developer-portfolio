@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="column md-3">
-                <img src="{{ asset('public/img/logo.svg') }}" class="footer-logo" alt="Ольга Смовж фронт-энд разработчик">
+                <img src="{{ asset('public/img/logo.svg') }}" class="footer-logo" alt="{% trans %}name{% endtrans %} {% trans %}job{% endtrans %}">
             </div>
             <div class="column md-3">
                 <ul class="footer-list ml-lg-35 ml-md-20">
@@ -28,16 +28,16 @@
             </div>
             <div class="column md-3">
                 <ul class="footer-list border-list footer-nav">
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#education">Образование</a></li>
-                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#about">{% trans %}about{% endtrans %}</a></li>
+                    <li><a href="#education">{% trans %}education{% endtrans %}</a></li>
+                    <li><a href="#skills">{% trans %}skills{% endtrans %}</a></li>
                 </ul>
             </div>
             <div class="column md-3">
                 <ul class="footer-list border-list footer-nav">
-                    <li><a href="#experience">Опыт работы</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#experience">{% trans %}experience{% endtrans %}</a></li>
+                    <li><a href="#portfolio">{% trans %}portfolio{% endtrans %}</a></li>
+                    <li><a href="#contacts">{% trans %}contact{% endtrans %}</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +45,7 @@
 </footer>
 <div class="copyright">
     <div class="container">
-        &copy; {{ 'now' | date('Y') }} Ольга Смовж
+        &copy; {{ 'now' | date('Y') }} {% trans %}name{% endtrans %}
     </div>
 </div>
 <button class="scroll-top-button"><i class="icon-top-arrow"></i></button>

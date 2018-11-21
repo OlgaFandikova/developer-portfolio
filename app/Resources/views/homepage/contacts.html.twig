@@ -2,8 +2,8 @@
     <section class="section">
         <div class="container">
             <div class="text-center">
-                <h2 class="heading wow tada">Контакты</h2>
-                <p class="font-20 uppercase mt-25 mb-sm-80 mb-xs-50">Перетащи иконку в ноутбук</p>
+                <h2 class="heading wow tada">{% trans %}contact{% endtrans %}</h2>
+                <p class="font-20 uppercase mt-25 mb-sm-80 mb-xs-50">{% trans %}contact_subtitle{% endtrans %}</p>
             </div>
             <div class="icons-container">
                 <div class="laptop">
@@ -16,7 +16,7 @@
                         <rect x="224.6" y="264.3" fill="#979695" width="86.9" height="8.8"/>
                         <path fill="#C3CAD4" d="M304.6,264.3v3.2c0,2.2-1.8,4-4,4h-65c-2.2,0-4-1.8-4-4v-3.2H0v15h536.4v-15H304.6z"/>
                         <path fill="#979695" d="M320.7,128.6c0.2-1.3,0.4-2.6,0.4-4c0-12.6-10.2-22.8-22.8-22.8c-2.7,0-5.4,0.5-7.8,1.4 c-7.4-11.5-20.3-19.2-35.1-19.2c-23.1,0-41.7,18.7-41.7,41.7c0,1.1,0.1,2.1,0.2,3.2c-11.2,2.8-19.4,12.9-19.4,24.9 c0,14.2,11.5,25.7,25.7,25.7h96.3c14.2,0,25.7-11.5,25.7-25.7C342.1,141.2,332.8,130.7,320.7,128.6z"/>
-                        <text transform="matrix(1 0 0 1 207.3863 203.1577)">Перетащи сюда</text>
+                        <text transform="matrix(1 0 0 1 207.3863 203.1577)">{% trans %}drag_here{% endtrans %}</text>
                     </svg>
                 </div>
                 <div class="draggable-arrow"></div>
@@ -36,7 +36,7 @@
 </div>
 <div class="map-header">
     <div class="container">
-        <i class="map-marker"></i> Найди меня на google map
+        <i class="map-marker"></i> {% trans %}find_me_on_google_map{% endtrans %}
     </div>
 </div>
 <div id="map" class="map" data-marker="{{ asset('public/img/map-marker.png') }}"></div>
