@@ -1,52 +1,52 @@
 <section id="portfolio" class="section bg-white-f1">
     <div class="container">
         <div class="text-center">
-            <h2 class="heading wow tada">Портфолио</h2>
-            <p class="font-20 uppercase mt-25 mb-20">Глаза боятся, а руки делают</p>
+            <h2 class="heading wow tada">{% trans %}portfolio{% endtrans %}</h2>
+            <p class="font-20 uppercase mt-25 mb-20">{% trans %}portfolio_subtitle{% endtrans %}</p>
         </div>
     </div>
     <div class="gallery-open-container">
-        <a href="#" class="gallery-open"><i></i><span>Развернуть портфолио</span></a>
+        <a href="#" class="gallery-open"><i></i><span>{% trans %}open_portfolio{% endtrans %}</span></a>
     </div>
     <div class="gallery">
-        <div data-title="Автошкола «Права 70»" data-description="Сайт автошколы в г. Томск" data-content="{{ path('prava70') }}" class="gallery-item active">
+        <div data-title="{% trans %}prava70{% endtrans %}" data-description="{% trans %}prava70_description{% endtrans %}" data-content="{{ path('prava70') }}" class="gallery-item active">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/prava70/prava70.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Арктика" data-description="Интерактивная карта системы транспортного комплекса Арктической зоны РФ" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}arctic{% endtrans %}" data-description="{% trans %}arctic_description{% endtrans %}" data-content="{{ path('arctic') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/arctic/arctic.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Эвакуатор в Томске" data-description="Сайт компании «AvtoWizard»" data-content="{{ path('evakuator') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}evakuator{% endtrans %}" data-description="{% trans %}evakuator_description{% endtrans %}" data-content="{{ path('evakuator') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/evakuator/evakuator.jpg') }}"/>
             </div>
         </div>
-        <div data-title="УЛПАК «Химия в школе»" data-description="Учебно-лабораторный программно-аппаратный комплекс" data-content="{{ path('chemistry') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}chemistry{% endtrans %}" data-description="{% trans %}chemistry_description{% endtrans %}" data-content="{{ path('chemistry') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/chemistry/chemistry.jpg') }}"/>
             </div>
         </div>
-        <div data-title="Lunacharsky group" data-description="Сайт студии «Lunacharsky»" data-content="{{ path('lunacharsky') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}lunacharsky{% endtrans %}" data-description="{% trans %}lunacharsky_description{% endtrans %}" data-content="{{ path('lunacharsky') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/lunacharsky/lunacharsky.jpg') }}"/>
             </div>
         </div>
-        <div data-title="МирКар" data-description="Интернет-магазин компании «МирКар»" data-content="{{ path('mircar') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}mircar{% endtrans %}" data-description="{% trans %}mircar_description{% endtrans %}" data-content="{{ path('mircar') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img  src="{{ asset('public/img/portfolio/mircar/mircar.jpg') }}"/>
             </div>
         </div>
-        <div data-title="B2B МирКар" data-description="Единая система закупки автозапчайстей" data-content="{{ path('b2bmircar') }}" class="gallery-item gallery-item-right">
+        <div data-title="{% trans %}b2bmircar{% endtrans %}" data-description="{% trans %}b2bmircar_description{% endtrans %}" data-content="{{ path('b2bmircar') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('public/img/portfolio/b2bmircar/b2bmircar.jpg') }}"/>
             </div>
         </div>
         <div class="gallery-description">
-            <h4 class="gallery-title">Автошкола «Права 70»</h4>
-            <p class="gallery-description-text">Сайт автошколы в г. Томск</p>
+            <h4 class="gallery-title">{% trans %}prava70{% endtrans %}</h4>
+            <p class="gallery-description-text">{% trans %}prava70_description{% endtrans %}</p>
         </div>
         <div class="gallery-navigation">
             <div class="stack stack-left"></div>
