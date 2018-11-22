@@ -196,17 +196,17 @@ $(document).ready(function() {
         mapCenter: {lat: 56.495785, lng: 85.056898},
 
         init: function() {
-            var map = new google.maps.Map(document.getElementById('map'), {
+            var $mapContainer = $('#map');
+            var map = new google.maps.Map($mapContainer, {
                 center: {lat: this.mapCenter.lat, lng: this.mapCenter.lng},
                 zoom: 12,
                 scrollwheel: false,
                 disableDefaultUI: true
             });
-
             var marker = new google.maps.Marker({
                 position: {lat: this.mapCenter.lat, lng: this.mapCenter.lng},
                 map: map,
-                icon: $('#map').data('marker')
+                icon: $mapContainer.data('marker')
             });
         }
     };
