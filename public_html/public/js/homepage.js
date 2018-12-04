@@ -197,7 +197,7 @@ $(document).ready(function() {
 
         init: function() {
             var $mapContainer = $('#map');
-            var map = new google.maps.Map($mapContainer, {
+            var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: this.mapCenter.lat, lng: this.mapCenter.lng},
                 zoom: 12,
                 scrollwheel: false,
