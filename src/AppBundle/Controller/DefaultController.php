@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/{_locale}", name="home", defaults = {"_locale" = "en"})
+     * @Route("/{_locale}", name="home", defaults={"_locale" = "en"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -24,82 +24,142 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/portfolio/arctic", name="arctic")
+     * @Route("/{_locale}/portfolio/arctic", name="arctic", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioArcticAction()
+    public function portfolioArcticAction(Request $request)
     {
-        return $this->render('homepage/portfolio/arctic.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/arctic.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/lunacharsky", name="lunacharsky")
+     * @Route("/{_locale}/portfolio/lunacharsky", name="lunacharsky", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioLunacharskyAction()
+    public function portfolioLunacharskyAction(Request $request)
     {
-        return $this->render('homepage/portfolio/lunacharsky.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/lunacharsky.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/mircar", name="mircar")
+     * @Route("/{_locale}/portfolio/mircar", name="mircar", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioMircarAction()
+    public function portfolioMircarAction(Request $request)
     {
-        return $this->render('homepage/portfolio/mircar.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/mircar.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/prava70", name="prava70")
+     * @Route("/{_locale}/portfolio/prava70", name="prava70", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioPrava70Action()
+    public function portfolioPrava70Action(Request $request)
     {
-        return $this->render('homepage/portfolio/prava70.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/prava70.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/chemistry", name="chemistry")
+     * @Route("/{_locale}/portfolio/chemistry", name="chemistry", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioСhemistryAction()
+    public function portfolioСhemistryAction(Request $request)
     {
-        return $this->render('homepage/portfolio/chemistry.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/chemistry.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/b2bmircar", name="b2bmircar")
+     * @Route("/{_locale}/portfolio/b2bmircar", name="b2bmircar", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioB2bmircarAction()
+    public function portfolioB2bmircarAction(Request $request)
     {
-        return $this->render('homepage/portfolio/b2bmircar.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/b2bmircar.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/evakuator", name="evakuator")
+     * @Route("/{_locale}/portfolio/evakuator", name="evakuator", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioEvakuatorAction()
+    public function portfolioEvakuatorAction(Request $request)
     {
-        return $this->render('homepage/portfolio/evakuator.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/evakuator.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/avtosteklo", name="avtosteklo")
+     * @Route("/{_locale}/portfolio/avtosteklo", name="avtosteklo", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioAvtostekloAction()
+    public function portfolioAvtostekloAction(Request $request)
     {
-        return $this->render('homepage/portfolio/avtosteklo.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/avtosteklo.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/bicyclecss", name="bicyclecss")
+     * @Route("/{_locale}/portfolio/bicyclecss", name="bicyclecss", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioBicyclecssAction()
+    public function portfolioBicyclecssAction(Request $request)
     {
-        return $this->render('homepage/portfolio/bicyclecss.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/bicyclecss.html.twig', array(
+            'locale' => $locale
+        ));
     }
 
     /**
-     * @Route("/portfolio/trushnikova", name="trushnikova")
+     * @Route("/{_locale}/portfolio/trushnikova", name="trushnikova", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function portfolioTrushnikovaAction()
+    public function portfolioTrushnikovaAction(Request $request)
     {
-        return $this->render('homepage/portfolio/trushnikova.html.twig');
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/trushnikova.html.twig', array(
+            'locale' => $locale
+        ));
     }
 }
