@@ -1,7 +1,7 @@
 #Basic
 name: Olga Smovzh
 job: front-end developer
-meta_description: Персональный сайт и портфолио фронт-энд разработчика Ольги Смовж
+meta_description: Front-end developer Olga Smovzh personal site and portfolio
 area: web development
 personal_portfolio: Personal portfolio
 and: and
@@ -16,8 +16,11 @@ portfolio: Portfolio
 contact: Contact
 
 #About Section
-about_p1: Занимаюсь веб-разработкой с 2015 года. Мне всегда нравилось создавать красивые вещи, поэтому я погрузилась во фронт-энд с головой. Люблю верстать, делать интересные анимации, эффекты и.т.п. Прошла тернистый путь от jQuery до Angular и React. Wordpress также побывал в моей жизни, куда же без него. Пишу понятный, аккуратный и красивый код. Обладаю чувством вкуса. Могу создавать лэндинги без нарисованного дизайна.
-about_p2: Готова помочь в решении Вашей задачи. Пишите!
+about_p1: Web-developer since 2015. I had always liked to design awesome things, so I thrown myself into front-end. I
+          like HTML/CSS-coding, also making interesting animations, effects etc. I had passed complex way from jQuery
+          to Angular and React. So Wordpress also visited me. My code is understandable, neat and awesome. I have sence
+          of style. I can design a landings without maket.
+about_p2: I would like to help you. Contact me!
 download_resume: download resume
 
 #Education Section
