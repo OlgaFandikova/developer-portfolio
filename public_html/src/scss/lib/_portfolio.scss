@@ -92,6 +92,14 @@
         top: 924px;
       }
     }
+    &:nth-of-type(9) {
+      top: 616px;
+      left: 1040px;
+      @include max-width(1580) {
+        top: 924px;
+        left: 0;
+      }
+    }
   }
 }
 

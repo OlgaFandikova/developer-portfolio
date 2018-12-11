@@ -78,4 +78,28 @@ class DefaultController extends Controller
     {
         return $this->render('homepage/portfolio/evakuator.html.twig');
     }
+
+    /**
+     * @Route("/portfolio/avtosteklo", name="avtosteklo")
+     */
+    public function portfolioAvtostekloAction()
+    {
+        return $this->render('homepage/portfolio/avtosteklo.html.twig');
+    }
+
+    /**
+     * @Route("/portfolio/bicyclecss", name="bicyclecss")
+     */
+    public function portfolioBicyclecssAction()
+    {
+        return $this->render('homepage/portfolio/bicyclecss.html.twig');
+    }
+
+    /**
+     * @Route("/portfolio/trushnikova", name="trushnikova")
+     */
+    public function portfolioTrushnikovaAction()
+    {
+        return $this->render('homepage/portfolio/trushnikova.html.twig');
+    }
 }
