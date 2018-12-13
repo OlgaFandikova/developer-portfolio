@@ -24,31 +24,31 @@ about_p2: I would like to help you. Contact me!
 download_resume: download resume
 
 #Education Section
-education_subtitle: Корень учения горек, да плод его сладок
+education_subtitle: Live and learn
 tpu: Tomsk Polytechnic University
 tpu_institute: Institute of Cybernetics
 engineer: Engineer
 specialty: Automation of technological processes and production (in the oil and gas industry)
 school: School
-school_name: Первомайская общеобразовательная школа
-school_certificate: Аттестат с отличием
-school_medal: Золотая медаль
-music_school: School of Music
-music_school_name: Первомайский дом культуры
+school_name: Pervomayskaya School
+school_certificate: Diploma with Honors
+school_medal: Golden Medal
+music_school: Music School
+music_school_name: Pervomayskiy Culture House
 piano: Piano
-piano_certificate: Диплом с отличием
+piano_certificate: Diploma with Honors
 choreography_school: Choreography
-choreography_school_name: Первомайский дом культуры
+choreography_school_name: Pervomayskiy Culture House
 choreography: Choreography
-choreography_certificate: Диплом с отличием
+choreography_certificate: Diploma with Honors
 
 #Skills Section
-skills_subtitle: Нет силы без умения
+skills_subtitle: Knowledge is a treasure, but practice is the key to it
 adaptive_layout: Adaptive layout
 crossbrowser_layout: Crossbrowser Layout
 
 #Experience Section
-experience_subtitle: Опыт — лучший учитель
+experience_subtitle: Practice makes perfect
 january: January
 february: February
 march: March
@@ -62,12 +62,13 @@ october: October
 november: November
 december: December
 until_now: until now
-retech_labs_description: Front-end разработка на Angular.
-space_o_description_p1: Участие в проектах компании,
-space_o_description_p2: разработка front-end части web-приложений.
-zennex_description: Разработка проекта на React + Redux.
-qeep_pro_description: Участие в разработке системы QEEP-Pro, проектов на React JS, мобильных приложений на React Native и др. Создание сайтов и лендингов на основе собственного дизайна.
-lunacharsky_group_description: Участие в разработке проектов, основными из которых были МирКар и B2B МирКар. Верстка по макетам, создание различных анимаций.
+retech_labs_description: Angular front-end development.
+space_o_description_p1: Web-apps development
+space_o_description_p2: ' '
+zennex_description: React + Redux front-end development.
+qeep_pro_description: Designing QEEP-Pro system, React development, React Native mobile development etc.
+                      HTML/CSS-coding for sites and landings based on own maket.
+lunacharsky_group_description: 'Front-end development (main projects: MirCar and B2B MirCar). Templates markup, css/svg/js animation'
 
 #Portfolio Section
 portfolio_subtitle: Глаза боятся, а руки делают
