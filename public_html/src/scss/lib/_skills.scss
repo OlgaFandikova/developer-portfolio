@@ -61,12 +61,12 @@
     .circle {
       transition-delay: .7s;
       @include max-width($screen-md) {
-        stroke-dashoffset: 46.629;
+        stroke-dashoffset: 40.412; //87%
       }
     }
     &.animated {
       .circle {
-        stroke-dashoffset: 46.629;
+        stroke-dashoffset: 40.412; //87%
       }
     }
   }
@@ -74,12 +74,12 @@
     .circle {
       transition-delay: .5s;
       @include max-width($screen-md) {
-        stroke-dashoffset: 46.629;
+        stroke-dashoffset: 24.869; //92%
       }
     }
     &.animated {
       .circle {
-        stroke-dashoffset: 46.629;
+        stroke-dashoffset: 24.869; //92%
       }
     }
   }
@@ -87,12 +87,12 @@
     .circle {
       transition-delay: .8s;
       @include max-width($screen-md) {
-        stroke-dashoffset: 62.172;
+        stroke-dashoffset: 59.063; //81%
       }
     }
     &.animated {
       .circle {
-        stroke-dashoffset: 62.172;
+        stroke-dashoffset: 59.063; //81%
       }
     }
   }
