@@ -162,4 +162,18 @@ class DefaultController extends Controller
             'locale' => $locale
         ));
     }
+
+    /**
+     * @Route("/{_locale}/portfolio/smovzhi", name="smovzhi", defaults={"_locale" = "en"})
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function portfolioSmovzhiAction(Request $request)
+    {
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/smovzhi.html.twig', array(
+            'locale' => $locale
+        ));
+    }
 }
