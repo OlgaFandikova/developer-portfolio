@@ -12,11 +12,11 @@
   &.open {
     @include min-width(1160) {
       width: 1040px;
-      height: 1232px;
+      height: 1540px;
     }
     @include min-width(1580) {
       width: 1560px;
-      height: 924px;
+      height: 1232px;
     }
   }
 }
@@ -98,6 +98,20 @@
       @include max-width(1580) {
         top: 924px;
         left: 0;
+      }
+    }
+    &:nth-of-type(10) {
+      top: 924px;
+      left: 0;
+      @include max-width(1580) {
+        top: 1232px;
+      }
+    }
+    &:nth-of-type(11) {
+      top: 924px;
+      left: 520px;
+      @include max-width(1580) {
+        top: 1232px;
       }
     }
   }
