@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/{_locale}", name="home", defaults={"_locale" = "en"})
+     * @Route("/{_locale}", name="home", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -24,7 +24,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/arctic", name="arctic", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/arctic", name="arctic", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -38,7 +38,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/lunacharsky", name="lunacharsky", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/lunacharsky", name="lunacharsky", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -52,7 +52,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/mircar", name="mircar", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/mircar", name="mircar", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -66,7 +66,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/prava70", name="prava70", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/prava70", name="prava70", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -80,7 +80,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/chemistry", name="chemistry", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/chemistry", name="chemistry", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -94,7 +94,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/b2bmircar", name="b2bmircar", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/b2bmircar", name="b2bmircar", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -108,7 +108,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/evakuator", name="evakuator", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/evakuator", name="evakuator", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -122,7 +122,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/avtosteklo", name="avtosteklo", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/avtosteklo", name="avtosteklo", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -136,7 +136,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/bicyclecss", name="bicyclecss", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/bicyclecss", name="bicyclecss", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -150,7 +150,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/trushnikova", name="trushnikova", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/trushnikova", name="trushnikova", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -164,7 +164,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{_locale}/portfolio/smovzhi", name="smovzhi", defaults={"_locale" = "en"})
+     * @Route("/{_locale}/portfolio/smovzhi", name="smovzhi", defaults={"_locale" = "ru"})
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
