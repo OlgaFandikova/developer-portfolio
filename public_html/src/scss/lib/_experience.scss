@@ -9,9 +9,14 @@
   color: $primary;
   margin: 20px 0 0 0;
   line-height: 1;
+  text-decoration: none;
   @include min-width($screen-sm) {
     margin-top: 0;
   }
+}
+
+a.company-name:hover {
+  text-decoration: underline;
 }
 
 .work-position {
