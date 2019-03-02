@@ -34,11 +34,17 @@
       }
       > i {
         vertical-align: text-top;
+        margin-top: 2px;
         margin-right: 5px;
         &.vk-icon {
           display: inline-block;
-          size: 18px;
+          size: 15px;
           @include svg(vk-logo, $primary);
+        }
+        &.insta-icon {
+          display: inline-block;
+          size: 15px;
+          @include svg(insta, $primary);
         }
       }
     }
@@ -72,6 +78,7 @@
 
 .mail-icon {
   display: inline-block;
-  size: 18px;
+  size: 15px;
+  margin-top: 3px;
   @include svg(mail, $primary);
 }
