@@ -140,3 +140,20 @@
   size: 18px;
   margin-right: 7px;
 }
+
+.link-rip {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  border: 1px dashed #adadad;
+  padding: 4px 11px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.link-rip-title {
+  font-size: 15px;
+  color: #adadad;
+  margin-top: 4px;
+  margin-left: 11px;
+}
