@@ -181,6 +181,10 @@
     opacity: .8;
     visibility: visible;
   }
+
+  > img {
+    display: block;
+  }
 }
 
 .gallery-navigation {
