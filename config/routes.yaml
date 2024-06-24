@@ -1,0 +1,47 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+bicyclecss:
+    path: /portfolio/bicyclecss
+    controller: App\Controller\DefaultController::portfolioBicyclecssAction
+
+smovzhi:
+    path: /portfolio/smovzhi
+    controller: App\Controller\DefaultController::portfolioSmovzhiAction
+
+trushnikova:
+    path: /portfolio/trushnikova
+    controller: App\Controller\DefaultController::portfolioTrushnikovaAction
+
+prava70:
+    path: /portfolio/prava70
+    controller: App\Controller\DefaultController::portfolioPrava70Action
+
+avtosteklo:
+    path: /portfolio/avtosteklo
+    controller: App\Controller\DefaultController::portfolioAvtostekloAction
+
+arctic:
+    path: /portfolio/arctic
+    controller: App\Controller\DefaultController::portfolioArcticAction
+
+evakuator:
+    path: /portfolio/evakuator
+    controller: App\Controller\DefaultController::portfolioEvakuatorAction
+
+chemistry:
+    path: /portfolio/chemistry
+    controller: App\Controller\DefaultController::portfolioChemistryAction
+
+lunacharsky:
+    path: /portfolio/lunacharsky
+    controller: App\Controller\DefaultController::portfolioLunacharskyAction
+
+mircar:
+    path: /portfolio/mircar
+    controller: App\Controller\DefaultController::portfolioMircarAction
+
+b2bmircar:
+    path: /portfolio/b2bmircar
+    controller: App\Controller\DefaultController::portfolioB2bmircarAction
