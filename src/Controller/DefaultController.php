@@ -18,6 +18,16 @@ class DefaultController extends AbstractController
         ]);
     }
 
+    #[Route('/{_locale}/portfolio/sewing-pattern', name: 'sewing-pattern', defaults: {"_locale" = "ru"})]
+    public function portfolioSewingPatternAction(Request $request): Response
+    {
+        $locale = $request->getLocale();
+
+        return $this->render('homepage/portfolio/sewing-pattern.html.twig', array(
+            'locale' => $locale
+        ));
+    }
+
     #[Route('/{_locale}/portfolio/bicyclecss', name: 'bicyclecss', defaults: {"_locale" = "ru"})]
     public function portfolioBicyclecssAction(Request $request): Response
     {

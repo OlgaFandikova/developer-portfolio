@@ -9,7 +9,12 @@
         <a href="#" class="gallery-open"><i></i><span>{% trans %}open_portfolio{% endtrans %}</span></a>
     </div>
     <div class="gallery">
-        <div data-title="{% trans %}bicyclecss{% endtrans %}" data-description="{% trans %}bicyclecss_description{% endtrans %}" data-content="{{ path('bicyclecss') }}" class="gallery-item active">
+        <div data-title="{% trans %}sewing-pattern{% endtrans %}" data-description="{% trans %}sewing-pattern_description{% endtrans %}" data-content="{{ path('sewing-pattern') }}" class="gallery-item active">
+            <div class="gallery-img">
+                <img src="{{ asset('img/portfolio/sewing-pattern/sewing-pattern.jpg') }}"/>
+            </div>
+        </div>
+        <div data-title="{% trans %}bicyclecss{% endtrans %}" data-description="{% trans %}bicyclecss_description{% endtrans %}" data-content="{{ path('bicyclecss') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('img/portfolio/bicyclecss/bicyclecss.jpg') }}"/>
             </div>
@@ -19,14 +24,14 @@
                 <img src="{{ asset('img/portfolio/smovzhi/smovzhi.jpg') }}"/>
             </div>
         </div>
-        <div data-title="{% trans %}trushnikova{% endtrans %}" data-description="{% trans %}trushnikova_description{% endtrans %}" data-content="{{ path('trushnikova') }}" class="gallery-item gallery-item-right">
-            <div class="gallery-img">
-                <img src="{{ asset('img/portfolio/trushnikova/trushnikova.jpg') }}"/>
-            </div>
-        </div>
         <div data-title="{% trans %}prava70{% endtrans %}" data-description="{% trans %}prava70_description{% endtrans %}" data-content="{{ path('prava70') }}" class="gallery-item gallery-item-right">
             <div class="gallery-img">
                 <img src="{{ asset('img/portfolio/prava70/prava70.jpg') }}"/>
+            </div>
+        </div>
+        <div data-title="{% trans %}trushnikova{% endtrans %}" data-description="{% trans %}trushnikova_description{% endtrans %}" data-content="{{ path('trushnikova') }}" class="gallery-item gallery-item-right">
+            <div class="gallery-img">
+                <img src="{{ asset('img/portfolio/trushnikova/trushnikova.jpg') }}"/>
             </div>
         </div>
         <div data-title="{% trans %}avtosteklo{% endtrans %}" data-description="{% trans %}avtosteklo_description{% endtrans %}" data-content="{{ path('avtosteklo') }}" class="gallery-item gallery-item-right">
@@ -65,8 +70,8 @@
             </div>
         </div>
         <div class="gallery-description">
-            <h4 class="gallery-title">{% trans %}bicyclecss{% endtrans %}</h4>
-            <p class="gallery-description-text">{% trans %}bicyclecss_description{% endtrans %}</p>
+            <h4 class="gallery-title">{% trans %}sewing-pattern{% endtrans %}</h4>
+            <p class="gallery-description-text">{% trans %}sewing-pattern_description{% endtrans %}</p>
         </div>
         <div class="gallery-navigation">
             <div class="stack stack-left"></div>

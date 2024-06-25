@@ -6,7 +6,7 @@
             <div class="column sm-6 text-right">
                 <div class="timeline-date wow slideInLeft mr-sm-30">
                     <div class="timeline-date-arrow arrow-right"></div>
-                    {% trans %}may{% endtrans %} 2018 - {% trans %}until_now{% endtrans %}
+                    {% trans %}may{% endtrans %} 2018 - {% trans %}may{% endtrans %} 2024
                 </div>
             </div>
             <div class="column sm-6 text-left">
@@ -15,14 +15,13 @@
                         <a href="http://retechlabs.com" class="company-name" target="_blank">ReTech Labs</a>
                         <p class="work-position">{% trans %}job{% endtrans %}</p>
                         <p class="work-description">
-                            {% trans %}retech_labs_description{% endtrans %}
-                            <br><br><br>
+                            {{ 'retech_labs_description'|trans|nl2br }}
                         </p>
                     </div>
                     <div class="timeline timeline-left wow bounceIn xs-hide">
                         <div class="line top-line"></div>
                         <i class="icon-close-arrow"></i>
-                        <div class="line bottom-line"></div>
+                        <div class="line bottom-line" style="height: 305px"></div>
                     </div>
                 </div>
             </div>
@@ -34,9 +33,7 @@
                         <a href="https://www.spaceotechnologies.com" class="company-name" target="_blank">Space-O Technologies</a>
                         <p class="work-position">{% trans %}job{% endtrans %}</p>
                         <p class="work-description">
-                            {% trans %}space_o_description_p1{% endtrans %}<br>
-                            {% trans %}space_o_description_p2{% endtrans %}
-                            <br><br>
+                            {{ 'space_o_description'|trans|nl2br }}
                         </p>
                     </div>
                     <div class="timeline wow bounceIn xs-hide">
@@ -66,8 +63,7 @@
                         <a href="http://zennex.ru" class="company-name" target="_blank">Zennex</a>
                         <p class="work-position">{% trans %}job{% endtrans %}</p>
                         <p class="work-description">
-                            {% trans %}zennex_description{% endtrans %}
-                            <br><br><br>
+                            {{ 'zennex_description'|trans|nl2br }}
                         </p>
                     </div>
                     <div class="timeline timeline-left wow bounceIn xs-hide">
@@ -85,13 +81,13 @@
                         <a href="https://qeep.pro" class="company-name" target="_blank">Qeep Pro</a>
                         <p class="work-position">{% trans %}job{% endtrans %}</p>
                         <p class="work-description">
-                            {% trans %}qeep_pro_description{% endtrans %}
+                            {{ 'qeep_pro_description'|trans|nl2br }}
                         </p>
                     </div>
                     <div class="timeline wow bounceIn xs-hide">
                         <div class="line top-line"></div>
                         <i class="icon-close-arrow"></i>
-                        <div class="line bottom-line"></div>
+                        <div class="line bottom-line" style="height: 180px"></div>
                     </div>
                 </div>
             </div>
@@ -115,7 +111,7 @@
                         <p class="company-name">Lunacharsky group</p>
                         <p class="work-position">{% trans %}job{% endtrans %}</p>
                         <p class="work-description">
-                            {% trans %}lunacharsky_group_description{% endtrans %}
+                            {{ 'lunacharsky_group_description'|trans|nl2br }}
                         </p>
                     </div>
                     <div class="timeline timeline-left wow bounceIn xs-hide">

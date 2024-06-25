@@ -2,6 +2,10 @@ index:
     path: /
     controller: App\Controller\DefaultController::index
 
+sewing-pattern:
+    path: /portfolio/sewing-pattern
+    controller: App\Controller\DefaultController::portfolioSewingPatternAction
+
 bicyclecss:
     path: /portfolio/bicyclecss
     controller: App\Controller\DefaultController::portfolioBicyclecssAction
