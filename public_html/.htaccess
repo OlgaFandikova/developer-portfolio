@@ -54,7 +54,7 @@ DirectoryIndex app.php
     RewriteRule ^ - [L]
 
     # Rewrite all other queries to the front controller.
-    RewriteRule ^ %{ENV:BASE}/app.php [L]
+    RewriteRule ^ %{ENV:BASE}/index.php [L]
 </IfModule>
 
 <IfModule !mod_rewrite.c>
@@ -71,5 +71,5 @@ DirectoryIndex app.php
     RewriteRule ^(.*)$ app_dev.php [QSA,L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ app.php [QSA,L]
+    RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
